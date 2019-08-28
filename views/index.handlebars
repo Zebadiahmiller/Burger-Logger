@@ -2,10 +2,13 @@
 
 <h2>Burgers!</h2>
 <ul>
-  {{#each this.burger_name}}
-    {{!-- {{#unless devoured}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}} --}}
+  {{#each burgers}}
+
+    {{#unless devoured}}
+    <li>
+        {{burger_name}}
+        </li>
+    {{/unless}}
   {{/each}}
 </ul>
 
